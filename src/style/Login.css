@@ -1,0 +1,92 @@
+/* Fullscreen container */
+.login-page-container {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Canvas for the cube animation */
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Login form wrapper */
+.login-form-wrapper {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Login title */
+.login-form-wrapper h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.login-form-wrapper input[type="text"],
+.login-form-wrapper input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+}
+
+/* Checkbox label */
+.login-form-wrapper label {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+/* Checkbox spacing */
+.login-form-wrapper label input {
+  margin-right: 5px;
+}
+
+/* Error messages */
+.login-form-wrapper p {
+  margin: 0;
+}
+
+.login-form-wrapper p.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.login-form-wrapper p.message {
+  color: yellow;
+  margin-top: 20px;
+}
+
+/* Login button */
+.login-form-wrapper button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form-wrapper button:hover {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+}

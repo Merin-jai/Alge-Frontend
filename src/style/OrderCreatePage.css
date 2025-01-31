@@ -1,0 +1,141 @@
+/* OrderCreatePage.css */
+
+/* General Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.order-container {
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.order-card {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.order-title {
+  text-align: center;
+  font-size: 24px;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.suggestions {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggestion-item:hover {
+  background-color: #f1f3f5;
+}
+
+/* Part Container */
+.part-container {
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background-color: #f9fafb;
+}
+
+.order-label {
+  font-size: 18px;
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+.remove-button {
+  float: right;
+  color: #dc3545;
+  font-size: 16px;
+}
+
+.select-material-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Add Button */
+.add-button-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.add-button {
+  background-color: #198754;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #157347;
+}
+
+/* Grand Total Box */
+.grand-total-box {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e9ecef;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+.grand-total-box h3 {
+  color: #495057;
+  margin: 0;
+}
+
+
+.modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.table {
+  text-align: center;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+/* Buttons */
+button {
+  border-radius: 5px;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}

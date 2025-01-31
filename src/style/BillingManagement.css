@@ -1,0 +1,141 @@
+.billing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .billing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .company-info h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .invoice-info h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .billing-section {
+    margin-bottom: 30px;
+  }
+  
+  .billing-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .billing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .billing-table th, .billing-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .billing-table th {
+    background: #f1f1f1;
+    color: #333;
+  }
+  
+  .billing-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .billing-dropdown {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+  }
+  
+  .billing-button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .billing-button:hover {
+    background: #0056b3;
+  }
+  
+  .billing-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .billing-message {
+    font-size: 14px;
+    color: #28a745;
+  }
+  
+  .billing-back-button {
+    background: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .billing-back-button:hover {
+    background: #5a6268;
+  }
+  
+  .payment-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .payment-section input, 
+  .payment-section select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+  }
+  
+  .payment-section input:focus, 
+  .payment-section select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  

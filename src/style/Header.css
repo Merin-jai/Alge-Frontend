@@ -1,0 +1,46 @@
+/* Header.css */
+
+.header-navbar {
+    background: linear-gradient(135deg, #1e293b, #0f172a);    padding: 1rem;
+  }
+  
+  .header-navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn-dashboard {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .btn-dashboard:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-back {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .btn-back:hover {
+    background-color: #5a6268;
+  }
+  
+  .btn-logout {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .btn-logout:hover {
+    background-color: #c82333;
+  }
+  

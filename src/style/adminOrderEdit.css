@@ -1,0 +1,169 @@
+/* adminOrderEdit.css */
+
+/* 1. Container Styling */
+.admin-order-edit-container {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+/* 2. Header Styling */
+.admin-order-edit-container h2,
+.admin-order-edit-container h4,
+.admin-order-edit-container h5 {
+  color: #333; /* Darker text for better readability */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-order-edit-container p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* 3. Table Styling */
+.admin-order-edit-container .table {
+  background-color: #fff; /* White background for tables */
+  border: 1px solid #dee2e6; /* Light border */
+  border-radius: 5px;
+}
+
+.admin-order-edit-container .table th {
+  background-color:#007bff; /* Bootstrap primary blue */
+  color: #fff; /* White text */
+  font-weight: bold;
+  text-align: center;
+}
+
+.admin-order-edit-container .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.admin-order-edit-container .table tbody tr:hover {
+  background-color: #f1f1f1; /* Light hover effect */
+}
+
+/* 4. Button Styling */
+
+/* Custom Green Button */
+.admin-order-edit-container .btn-custom-green {
+  background-color: #28a745; /* Bootstrap success green */
+  border: none;
+  color: #fff;
+}
+
+.admin-order-edit-container .btn-custom-green:hover {
+  background-color: #218838;
+  color: #fff;
+}
+
+/* Custom Red Button */
+.admin-order-edit-container .btn-custom-red {
+  background-color: #dc3545; /* Bootstrap danger red */
+  border: none;
+  color: #fff;
+}
+
+.admin-order-edit-container .btn-custom-red:hover {
+  background-color: #c82333;
+  color: #fff;
+}
+
+/* Custom Blue Button */
+.admin-order-edit-container .btn-custom-blue {
+  background-color: #007bff; /* Bootstrap primary blue */
+  border: none;
+  color: #fff;
+}
+
+.admin-order-edit-container .btn-custom-blue:hover {
+  background-color: #0069d9;
+  color: #fff;
+}
+
+/* 5. Form Controls Styling */
+.admin-order-edit-container .form-control {
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.admin-order-edit-container .form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* 6. Card Styling */
+.admin-order-edit-container .card {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.admin-order-edit-container .card h4 {
+  color: #007bff; /* Blue color for card headings */
+  margin-bottom: 20px;
+}
+
+/* 7. Modal Styling */
+.admin-order-edit-container .modal-title {
+  color: #007bff;
+}
+
+.admin-order-edit-container .modal .table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* 8. Miscellaneous Styling */
+.admin-order-edit-container .btn {
+  margin-bottom: 10px;
+}
+
+.admin-order-edit-container .mt-3 {
+  margin-top: 1rem !important;
+}
+
+.admin-order-edit-container .my-4 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.admin-order-edit-container .p-4 {
+  padding: 1.5rem !important;
+}
+
+/* 9. Specific Button Overrides in Tables */
+.admin-order-edit-container .table .btn-info {
+  background-color: #17a2b8; /* Info color */
+  border: none;
+}
+
+.admin-order-edit-container .table .btn-danger {
+  background-color: #dc3545; /* Danger color */
+  border: none;
+}
+
+.admin-order-edit-container .table .btn-success {
+  background-color: #28a745; /* Success color */
+  border: none;
+}
+
+.admin-order-edit-container .table .btn-secondary {
+  background-color: #6c757d; /* Secondary color */
+  border: none;
+}
+
+.admin-order-edit-container .table .btn-info:hover {
+  background-color: #138496;
+}
+
+.admin-order-edit-container .table .btn-danger:hover {
+  background-color: #c82333;
+}
+
+.admin-order-edit-container .table .btn-success:hover {
+  background-color: #218838;
+}
+
+.admin-order-edit-container .table .btn-secondary:hover {
+  background-color: #5a6268;
+}

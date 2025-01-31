@@ -1,0 +1,171 @@
+/* ===== Page Styles ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+/* ===== Container ===== */
+.pending-orders-dashboard-container {
+    max-width: 1300px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Page Title ===== */
+.pending-orders-dashboard-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ===== Filter Container ===== */
+.pending-orders-dashboard-filter-container {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Filter Inputs */
+.pending-orders-dashboard-filter-container input,
+.pending-orders-dashboard-filter-container select {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Reset Button */
+.pending-orders-dashboard-reset-button {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pending-orders-dashboard-reset-button:hover {
+    background: #5a6268;
+}
+
+/* ===== Orders Table ===== */
+.pending-orders-dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Headers */
+.pending-orders-dashboard-table th {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Table Cells */
+.pending-orders-dashboard-table th,
+.pending-orders-dashboard-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+/* Hover Effect */
+.pending-orders-dashboard-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ===== Status Badges ===== */
+.pending-orders-dashboard-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    min-width: 80px;
+    text-align: center;
+}
+
+/* Different Status Colors */
+.pending-orders-dashboard-badge.printed {
+    background-color: #28a745; /* Green */
+}
+
+.pending-orders-dashboard-badge.pending {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+}
+
+.pending-orders-dashboard-badge.billed {
+    background-color: #17a2b8; /* Blue */
+}
+
+.pending-orders-dashboard-badge.delivered {
+    background-color: #6c757d; /* Grey */
+}
+
+/* ===== Manage Payment Button ===== */
+.pending-orders-dashboard-action-button {
+    background: #007bff;
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.1s ease;
+    cursor: pointer;
+}
+
+.pending-orders-dashboard-action-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pending-orders-dashboard-container {
+        padding: 15px;
+    }
+
+    .pending-orders-dashboard-table th,
+    .pending-orders-dashboard-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .pending-orders-dashboard-reset-button,
+    .pending-orders-dashboard-action-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .pending-orders-dashboard-filter-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

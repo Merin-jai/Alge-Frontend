@@ -1,0 +1,76 @@
+/* Container for the whole component */
+div {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* Title styles */
+h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Input and Select styling */
+input[type="text"], input[type="password"], select {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td button {
+    margin: 0 5px;
+}
+
+/* Styling the search input */
+input[type="text"] {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+/* Making the page responsive */
+@media (max-width: 768px) {
+    table, input[type="text"], input[type="password"], select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}

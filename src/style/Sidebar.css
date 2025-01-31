@@ -1,0 +1,104 @@
+/* Reset some default styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the sidebar */
+.sidebar {
+  position: fixed; /* Fixed position to keep it in place */
+  top: 0; /* Align to the top */
+  left: -250px; /* Start off-screen */
+  width: 250px; /* Width of the sidebar */
+  height: 100%; /* Full height */
+  background-color: #ffffff; /* Background color */
+  color: rgb(0, 0, 0); /* Text color */
+  transition: left 0.3s ease; /* Smooth transition for opening and closing */
+  z-index: 1001; /* Ensure it is above other content */
+}
+
+/* Styles when the sidebar is open */
+.sidebar.open {
+  left: 0; /* Bring the sidebar into view */
+}
+
+/* Styles for the closed state */
+.sidebar.closed {
+  left: -250px; /* Keep it off-screen */
+}
+
+/* Header styles for the sidebar */
+.sidebar-header {
+  display: flex; /* Flex layout for header */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center vertically */
+  padding: 15px; /* Padding for the header */
+  background-color: #007bff; /* Darker background for header */
+}
+
+/* Menu styling */
+.sidebar-menu {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+}
+
+/* Individual menu item styles */
+.sidebar-menu li {
+  padding: 15px; /* Padding for each item */
+  cursor: pointer; /* Show pointer on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Hover effect for menu items */
+.sidebar-menu li:hover {
+  background-color: #555; /* Change background on hover */
+}
+
+/* Toggle button styles */
+.toggle-btn {
+  background-color:#007bff; /* Background for toggle button */
+  color: white; /* Text color */
+  border: none; /* No border */
+  padding: 10px; /* Padding */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 20px; /* Font size */
+  position: absolute; /* Positioning */
+  top: 10px; /* Align to the top */
+  left: 10px; /* Align to the left */
+  z-index: 1000; /* Above the sidebar */
+}
+
+/* Close button styles */
+.close-btn {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: white; /* Text color */
+  font-size: 20px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Adjust width for smaller screens */
+  }
+
+  .toggle-btn {
+    font-size: 18px; /* Slightly smaller toggle button */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar {
+    width: 150px; /* Further adjust width for very small screens */
+  }
+
+  .sidebar-menu li {
+    padding: 10px; /* Decrease padding for smaller screens */
+  }
+
+  .toggle-btn {
+    font-size: 16px; /* Further decrease toggle button size */
+  }
+}
