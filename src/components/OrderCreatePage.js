@@ -25,7 +25,7 @@ const OrderCreatePage = () => {
   useEffect(() => {
     const fetchMaterials = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/materials", {
+        const response = await axios.get("https://algebra1.ddns.net/api/materials", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setMaterials(response.data);
@@ -53,7 +53,7 @@ const OrderCreatePage = () => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:5000/api/customers?contact=${contact}`, {
+      const response = await axios.get(`https://algebra1.ddns.net/api/customers?contact=${contact}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setSuggestions(response.data.customers || []);
@@ -144,7 +144,7 @@ const OrderCreatePage = () => {
 
       try {
         const custResponse = await axios.post(
-          "http://localhost:5000/api/customers",
+          "https://algebra1.ddns.net/api/customers",
           {
             name: customer.name.trim(),
             contact: customer.contact.trim(),
@@ -164,7 +164,7 @@ const OrderCreatePage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/orders",
+        "https://algebra1.ddns.net/api/orders",
         {
           customerId: customerId,
           createdBy: 1,

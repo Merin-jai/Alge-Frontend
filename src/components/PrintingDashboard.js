@@ -32,7 +32,7 @@
 
 //     try {
 //       const response = await axios.get(
-//         "http://localhost:5000/api/orders/child-orders",
+//         "https://algebra1.ddns.net/api/orders/child-orders",
 //         {
 //           params: { role },
 //           headers: { Authorization: `Bearer ${token}` },
@@ -228,7 +228,7 @@ function PrintingDashboard() {
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/orders/child-orders",
+        "https://algebra1.ddns.net/api/orders/child-orders",
         {
           params: { role },
           headers: { Authorization: `Bearer ${token}` },

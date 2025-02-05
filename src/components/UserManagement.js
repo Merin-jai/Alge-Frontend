@@ -85,7 +85,7 @@ const UserManagement = () => {
   // Fetch all users
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/users");
+      const response = await axios.get("https://algebra1.ddns.net/api/users");
       setUsers(response.data);
     } catch (error) {
       console.error("Error fetching users:", error);
@@ -95,7 +95,7 @@ const UserManagement = () => {
   // Fetch all roles
   const fetchRoles = async () => {
     try {
-        const response = await axios.get("http://localhost:5000/api/roles");
+        const response = await axios.get("https://algebra1.ddns.net/api/roles");
         if (response.data && Array.isArray(response.data)) {
             setRoles(response.data);
         } else {
@@ -110,7 +110,7 @@ const UserManagement = () => {
   // Add a new user
   const handleAddUser = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/users", newUser);
+      const response = await axios.post("https://algebra1.ddns.net/api/users", newUser);
       setUsers((prev) => [...prev, response.data]);
       setNewUser({ name: "", contactNo: "", roleID: "", password: "" });
     } catch (error) {
@@ -122,7 +122,7 @@ const UserManagement = () => {
   const handleToggleStatus = async (userId, currentStatus) => {
     try {
       const newStatus = currentStatus === "Enable" ? "Disable" : "Enable";
-      await axios.put(`http://localhost:5000/api/users/${userId}/status`, {
+      await axios.put(`https://algebra1.ddns.net/api/users/${userId}/status`, {
         status: newStatus,
       });
       fetchUsers();
@@ -136,7 +136,7 @@ const UserManagement = () => {
     try {
       const newPassword = prompt("Enter a new password:");
       if (newPassword) {
-        await axios.put(`http://localhost:5000/api/users/${userId}/reset-password`, {
+        await axios.put(`https://algebra1.ddns.net/api/users/${userId}/reset-password`, {
           password: newPassword,
         });
         alert("Password reset successfully!");
@@ -149,7 +149,7 @@ const UserManagement = () => {
   // Change user role
   const handleChangeRole = async (userId, newRoleID) => {
     try {
-      await axios.put(`http://localhost:5000/api/users/${userId}/role`, {
+      await axios.put(`https://algebra1.ddns.net/api/users/${userId}/role`, {
         roleID: newRoleID,
       });
       fetchUsers();

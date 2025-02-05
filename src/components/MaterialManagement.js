@@ -68,7 +68,7 @@ const MaterialManagement = () => {
 
     const fetchMaterials = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/api/materials");
+            const response = await axios.get("https://algebra1.ddns.net/api/materials");
             setMaterials(response.data);
         } catch (error) {
             console.error("Error fetching materials:", error);
@@ -81,7 +81,7 @@ const MaterialManagement = () => {
             return;
         }
         try {
-            const response = await axios.post("http://localhost:5000/api/materials", newMaterial);
+            const response = await axios.post("https://algebra1.ddns.net/api/materials", newMaterial);
             setMaterials([...materials, response.data]);
             setNewMaterial({ materialName: "", ratePerSqFt: "" });
         } catch (error) {
@@ -104,7 +104,7 @@ const MaterialManagement = () => {
         }
         try {
             const response = await axios.put(
-                `http://localhost:5000/api/materials/${editingMaterial.materialid}`,
+                `https://algebra1.ddns.net/api/materials/${editingMaterial.materialid}`,
                 newMaterial
             );
             setMaterials(
@@ -124,7 +124,7 @@ const MaterialManagement = () => {
     const handleDeleteMaterial = async (materialId) => {
         if (!window.confirm("Are you sure you want to delete this material?")) return;
         try {
-            await axios.delete(`http://localhost:5000/api/materials/${materialId}`);
+            await axios.delete(`https://algebra1.ddns.net/api/materials/${materialId}`);
             setMaterials(materials.filter((material) => material.materialid !== materialId));
         } catch (error) {
             console.error("Error deleting material:", error);

@@ -18,7 +18,7 @@
 
 //       try {
 //         const response = await axios.get(
-//           `http://localhost:5000/api/orders/order-child/${orderId}`,
+//           `https://algebra1.ddns.net/api/orders/order-child/${orderId}`,
 //           {
 //             headers: { Authorization: `Bearer ${token}` },
 //           }
@@ -41,7 +41,7 @@
 //       const token = localStorage.getItem("token");
 
 //       await axios.put(
-//         `http://localhost:5000/api/orders/order-child/${orderId}/update`,
+//         `https://algebra1.ddns.net/api/orders/order-child/${orderId}/update`,
 //         {
 //           wastageCharge,
 //           orderStatus,
@@ -210,7 +210,7 @@ const PrintingOrder = () => {
 
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/orders/order-child/${orderId}`,
+          `https://algebra1.ddns.net/api/orders/order-child/${orderId}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -233,7 +233,7 @@ const PrintingOrder = () => {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/orders/order-child/${orderId}/update`,
+        `https://algebra1.ddns.net/api/orders/order-child/${orderId}/update`,
         {
           wastageCharge,
           orderStatus,

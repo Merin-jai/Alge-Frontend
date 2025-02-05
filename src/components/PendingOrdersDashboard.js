@@ -30,7 +30,7 @@ const PendingOrdersDashboard = () => {
     }
 
     try {
-      const response = await axios.get("http://localhost:5000/api/orders/billing-master-orders", {
+      const response = await axios.get("https://algebra1.ddns.net/api/orders/billing-master-orders", {
         headers: { Authorization: `Bearer ${token}` },
       });
 

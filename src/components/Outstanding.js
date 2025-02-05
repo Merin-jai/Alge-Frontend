@@ -28,7 +28,7 @@ const Outstanding = () => {
   const fetchOutstanding = useCallback(
     debounce(async (params) => {
       try {
-        const res = await axios.get("http://localhost:5000/api/outstanding", {
+        const res = await axios.get("https://algebra1.ddns.net/api/outstanding", {
           params,
         });
         setOutstandingList(res.data);
