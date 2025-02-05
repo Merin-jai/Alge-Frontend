@@ -1,3 +1,6 @@
+
+
+
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,11 +10,9 @@ import LoginPage from "./components/LoginPage";
 import OrderCreatePage from "./components/OrderCreatePage";
 import MaterialManagement from "./components/MaterialManagement";
 import UserManagement from "./components/UserManagement";
-import Home from "./components/Home";
 import EditOrder from "./components/EditOrder";
 import PendingOrdersDashboard from "./components/PendingOrdersDashboard";
 import BillingManagement from "./components/BillingManagement";
-import DemoPage from "./components/DemoPage";
 import DesignerDashboard from "./components/DesignerDashboard";
 import PrintingDashboard from "./components/PrintingDashboard";
 import PrintingOrder from "./components/PrintingOrder";
@@ -45,6 +46,7 @@ function App() {
           <Layout>
             <Routes>
               {/* General Routes */}
+
 
               {/* Designer Routes */}
               <Route path="/DesignerDashboard" element={<DesignerDashboard />} />
