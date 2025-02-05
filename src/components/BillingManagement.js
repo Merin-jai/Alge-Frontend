@@ -21,7 +21,7 @@ const BillingManagement = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:5000/api/billing/master/${orderId}`,
+        `http://algebra1.ddns.net/api/billing/master/${orderId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -48,7 +48,7 @@ const BillingManagement = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        `http://localhost:5000/api/billing/payments`,
+        `http://algebra1.ddns.net/api/billing/payments`,
         {
           orderId,
           paymentType,
@@ -76,7 +76,7 @@ const BillingManagement = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `http://localhost:5000/api/billing/update-status`,
+        `http://algebra1.ddns.net/api/billing/update-status`,
         { orderId, status: newStatus },
         {
           headers: { Authorization: `Bearer ${token}` },
