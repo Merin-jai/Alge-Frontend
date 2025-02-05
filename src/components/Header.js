@@ -23,7 +23,7 @@ const Header = () => {
         navigate("/DesignerDashboard");
         break;
       case "Billing":
-        navigate("/BillingManagemnt");
+        navigate("/BillingManagement");
         break;
       default:
         if (["UV", "Solvent", "Eco Solvent", "Flatbed", "Vinyl"].includes(role)) {
