@@ -41,7 +41,7 @@ const Header = () => {
 
   const handleLogout = () => {
     localStorage.clear();
-    navigate("/LoginPage");
+    navigate("/");
   };
 
   return (
