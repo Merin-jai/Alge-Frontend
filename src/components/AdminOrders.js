@@ -23,7 +23,7 @@ const AdminOrders = () => {
     try {
       const { status, startDate, endDate, search } = currentFilters;
 
-      const response = await axios.get("http://localhost:5000/api/admin-orders", {
+      const response = await axios.get("https://algebra1.ddns.net/api/admin-orders", {
         params: {
           status,
           startDate: startDate ? startDate.toISOString().split("T")[0] : null,

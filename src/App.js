@@ -36,7 +36,7 @@ function App() {
   return (
     <Routes>
       {/* General Routes (No Header on Login Page) */}
-      <Route path="/LoginPage" element={<LoginPage />} />
+      <Route path="/" element={<LoginPage />} />
 
       {/* All Other Routes Include Header */}
       <Route
@@ -45,7 +45,6 @@ function App() {
           <Layout>
             <Routes>
               {/* General Routes */}
-              <Route path="/" element={<LoginPage />} />
 
               {/* Designer Routes */}
               <Route path="/DesignerDashboard" element={<DesignerDashboard />} />

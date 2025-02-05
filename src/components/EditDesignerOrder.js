@@ -35,7 +35,7 @@ const EditDesignerOrder = () => {
       }
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/edit-designer-order/child/${childOrderId}`,
+          `https://algebra1.ddns.net/api/edit-designer-order/child/${childOrderId}`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -68,7 +68,7 @@ const EditDesignerOrder = () => {
 
     const fetchMaterials = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/materials");
+        const response = await axios.get("https://algebra1.ddns.net/api/materials");
         setMaterials(response.data);
       } catch (error) {
         console.error("Error fetching materials:", error);
@@ -106,7 +106,7 @@ const EditDesignerOrder = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        `http://localhost:5000/api/edit-designer-order/child/edit/${childOrderId}`,
+        `https://algebra1.ddns.net/api/edit-designer-order/child/edit/${childOrderId}`,
         {
           materialId: selectedMaterial.materialid,
           printingType: selectedPrintingType,

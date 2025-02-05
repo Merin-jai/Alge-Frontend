@@ -58,7 +58,7 @@ const AdminOrderEdit = () => {
     const fetchOrderDetails = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/admin-orders/${orderId}`
+          `https://algebra1.ddns.net/api/admin-orders/${orderId}`
         );
         const { masterOrder, childOrders, paymentHistory } = res.data;
 
@@ -85,7 +85,7 @@ const AdminOrderEdit = () => {
     const fetchMaterials = async () => {
       try {
         // If your backend "materials" route is /api/admin-orders/materials, change below
-        const response = await axios.get("http://localhost:5000/api/materials");
+        const response = await axios.get("https://algebra1.ddns.net/api/materials");
         setMaterials(response.data);
       } catch (error) {
         console.error("Error fetching materials:", error);
@@ -126,7 +126,7 @@ const AdminOrderEdit = () => {
     }
     try {
       await axios.put(
-        `http://localhost:5000/api/admin-orders/${masterOrder.orderid}/status`,
+        `https://algebra1.ddns.net/api/admin-orders/${masterOrder.orderid}/status`,
         {
           orderstatus: masterOrder.orderstatus,
         }
@@ -204,7 +204,7 @@ const AdminOrderEdit = () => {
       };
       // PUT /api/admin-orders/child/:order_cid
       await axios.put(
-        `http://localhost:5000/api/admin-orders/child/${selectedChildOrder.order_cid}`,
+        `https://algebra1.ddns.net/api/admin-orders/child/${selectedChildOrder.order_cid}`,
         updatedOrder
       );
 
@@ -220,7 +220,7 @@ const AdminOrderEdit = () => {
   const handleDeleteChildOrder = async (order_cid) => {
     if (!window.confirm("Are you sure you want to delete this child order?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/admin-orders/child/${order_cid}`);
+      await axios.delete(`https://algebra1.ddns.net/api/admin-orders/child/${order_cid}`);
       alert("Child order deleted successfully.");
       setChildOrders((prev) => prev.filter((o) => o.order_cid !== order_cid));
     } catch (error) {
@@ -235,7 +235,7 @@ const AdminOrderEdit = () => {
   const handleDeletePayment = async (payment_cid) => {
     if (!window.confirm("Are you sure you want to delete this payment?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/admin-orders/payment/${payment_cid}`);
+      await axios.delete(`https://algebra1.ddns.net/api/admin-orders/payment/${payment_cid}`);
       alert("Payment deleted successfully.");
       setPaymentHistory((prev) => prev.filter((p) => p.payment_cid !== payment_cid));
     } catch (error) {
@@ -257,7 +257,7 @@ const AdminOrderEdit = () => {
       return;
     }
     try {
-      await axios.put(`http://localhost:5000/api/admin-orders/payment/${payment_cid}`, {
+      await axios.put(`https://algebra1.ddns.net/api/admin-orders/payment/${payment_cid}`, {
         amount: parseFloat(newPaymentAmount),
       });
       alert("Payment updated successfully.");

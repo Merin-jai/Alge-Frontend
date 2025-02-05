@@ -31,7 +31,7 @@ const AdminDashboard = () => {
   // Fetch data from the backend
   const fetchDashboardData = async (start, end) => {
     try {
-      const response = await axios.get("http://localhost:5000/api/dashboard-data", {
+      const response = await axios.get("https://algebra1.ddns.net/api/dashboard-data", {
         params: { startDate: start, endDate: end },
       });
       setDashboardData(
