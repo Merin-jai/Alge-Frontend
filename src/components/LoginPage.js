@@ -125,7 +125,7 @@ function LoginPage() {
 
     try {
       // const response = await axios.post("https://algebra1.ddns.net/api/login", { username, password });
-      const response = await axios.post("http://localhost:3000/api/login", { username, password });
+      const response = await axios.post("http://15.207.98.145:3000/api/login", { username, password });
       const { token, userId, role, status } = response.data;
 
       if (status === "Disable") {
