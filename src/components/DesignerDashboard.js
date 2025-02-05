@@ -32,7 +32,7 @@ const DesignerDashboard = () => {
 
     try {
       const response = await axios.get(
-        `http://algebra1.ddns.net/api/orders/designer/${userId}`,
+        `https://algebra1.ddns.net/api/orders/designer/${userId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -103,7 +103,7 @@ const DesignerDashboard = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.delete(
-        `http://algebra1.ddns.net/api/delete/master/${masterOrderId}`,
+        `https://algebra1.ddns.net/api/delete/master/${masterOrderId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -125,7 +125,7 @@ const DesignerDashboard = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.delete(
-        `http://algebra1.ddns.net/api/delete/child/${childOrderId}`,
+        `https://algebra1.ddns.net/api/delete/child/${childOrderId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
