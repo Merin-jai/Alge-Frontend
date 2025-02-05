@@ -29,7 +29,7 @@ function Sidebar() {
         <ul className="sidebar-menu">
           <li onClick={() => navigate("/UserManagement")}>User Management</li>
           <li onClick={() => navigate("/MaterialManagement")}>Material Management</li>
-          <li onClick={() => navigate("/LoginPage")}>Logout</li>
+          <li onClick={() => navigate("/")}>Logout</li>
           <li onClick={() => navigate("/AdminOrders")}>AdminOrders</li>
 
         </ul>
