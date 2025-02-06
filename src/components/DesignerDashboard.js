@@ -171,11 +171,13 @@ const DesignerDashboard = () => {
               type="date"
               value={startDate}
               onChange={(e) => setStartDate(e.target.value)}
+              placeholder="Start Date"
             />
             <Form.Control
               type="date"
               value={endDate}
               onChange={(e) => setEndDate(e.target.value)}
+              placeholder="End date"
             />
           </div>
           <Button className="create-order-btn" onClick={handleCreateOrder}>
